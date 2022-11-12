@@ -4,7 +4,7 @@ import { Read } from './components/Read/Read';
 import 'semantic-ui-css/semantic.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Update } from './components/Update/Update';
-import { Delete } from  './components/Delete/Delete';
+
 
 
 function App() {
@@ -28,9 +28,7 @@ function App() {
               <Route  path='/Update' element={<Update/>}/>
             </Routes>
       
-            <Routes>
-              <Route  path='/Delete' element = {<Delete/>}/>
-            </Routes>
+            
           </div>
       </div>
       

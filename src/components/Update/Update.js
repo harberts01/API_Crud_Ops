@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import { Button, Form } from 'semantic-ui-react';
 import axios from 'axios';
 
@@ -20,9 +19,9 @@ export const Update = () => {
 
     useEffect(() => {
         setFirstName(localStorage.getItem('firstName'));
-        setFirstName(localStorage.getItem('lastName'));
+        setLastName(localStorage.getItem('lastName'));
         setID(localStorage.getItem('ID'))
-        console.log(firstName)
+        
     }, [])
     
 

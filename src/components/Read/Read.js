@@ -14,11 +14,10 @@ export const Read = () => {
     }, []);
 
     const setID = (id) => {
-        console.log(id)
         localStorage.setItem('ID', id)
     }
 
-    const getData =() => {
+    const getData = () => {
         axios.get(`https://636dd76cb567eed48acaa59d.mockapi.io/CRUD`)
         .then((getData) => {
             setApiData(getData.data)
@@ -58,9 +57,7 @@ export const Read = () => {
                         </Link>
                     </Table.Cell>
                     <Table.Cell>
-                        <Link to='/Delete'>
-                            <Button color="red" onClick={() =>onDelete(id)}>Delete</Button>
-                        </Link>
+                            <Button color="red" onClick={() => onDelete(data.id)}>Delete</Button>
                     </Table.Cell>
                 </Table.Row>
                 )
